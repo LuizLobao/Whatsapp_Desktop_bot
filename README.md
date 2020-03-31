@@ -1,11 +1,16 @@
 # Whatsapp_Desktop_bot
 
+BR
+
+
 Um robô simples para enviar mensagens através do Whatsapp Desktop.
 
 Este robô foi desenvolvido para ser iniciado através de uma planilha Excel com o objetivo de enviar a imagem de uma tabela/grafico para vários grupos de Whatsapp.
 A macro do excel deve copiar a tabela/gráfico e em seguida iniciar o robô.
 O robô irá abrir o Whastapp Desktop, buscar pelo grupo pré-definido, colar a imagem, adicionar o texto e enviar. Loop criado para repetir o processo para cada grupo escolhido.
 
+---
+US
 
 A simple Python bot to send messages from Whatsapp Desktop.
 
