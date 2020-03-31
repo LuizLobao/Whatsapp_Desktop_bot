@@ -6,6 +6,7 @@ from pywinauto import application
 keyboard = Controller()
 
 def OpenWhatsappDesktop():
+    """Open the Whastapp desktop application. Change the path before use."""
     try:
         os.startfile(r'C:\Users\luiz\AppData\Local\WhatsApp\WhatsApp.exe')
     except Exception as e:
@@ -13,6 +14,7 @@ def OpenWhatsappDesktop():
 
 
 def CloseWhatsappDesktop():
+    """Close the Whatsapp Desktop application"""
     try:
         os.system('TASKKILL /F /IM WhatsApp.exe')
     except Exception as e:
@@ -20,6 +22,7 @@ def CloseWhatsappDesktop():
 
 
 def SearchGroup(nome):
+    """Search for the group name"""
     try:
         keyboard.press(Key.tab)
         keyboard.release(Key.tab)
