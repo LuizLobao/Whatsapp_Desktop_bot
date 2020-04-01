@@ -1,0 +1,12 @@
+{
+   "lista_mensagens": [
+    {
+        "grupo": "Eu Sozinho",
+        "mensagem": "mensagem para o grupo EU SOZINHO"
+    },
+    {
+        "grupo": "Teste Python", 
+        "mensagem": "mensage para o grupo Teste Python"
+    }
+   ]
+}
