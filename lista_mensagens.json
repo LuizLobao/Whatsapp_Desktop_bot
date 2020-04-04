@@ -6,7 +6,11 @@
         },
         {
             "grupo": "Teste Python",
-            "mensagem": "mensage para o grupo Teste Python"
+            "mensagem": "mensagem para o grupo Teste Python"
+        },
+        {
+            "grupo": "Teste Python",
+            "mensagem": "Mais uma mensagem para o grupo Teste Python"
         }
     ]
 }

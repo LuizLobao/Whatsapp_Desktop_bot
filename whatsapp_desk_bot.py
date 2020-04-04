@@ -80,16 +80,19 @@ def AddtoJson(texto):
 
 def Menu():
     while True:
-        resposta = menu(['Exibir Lista de Grupos x Mensagem', 'Alterar Lista', 'Incluir Dados na Lista','Executar Robô','Sair'])
+        resposta = menu(['Exibir Lista de Grupos x Mensagem', 'Alterar Lista', 'Incluir Dados na Lista','Excluir Dados da Lista','Executar Robô','Sair'])
         if resposta == 1:
             header('Lista de Grupos e Mensagens')
             lista = OpenJson()
+            n = 1
             for grupos in lista['lista_mensagens']:
-                print(grupos['grupo'], ' - ', grupos['mensagem'])
+                print(n, '-',grupos['grupo'], ' - ', grupos['mensagem'])
+                n +=1
             sleep(5)
         
         elif resposta ==2:
-            header ('Opção2')
+            header ('Alterar Lista')
+            print ("EM DESENVOLVIMENTO")
             sleep(2)
         
         elif resposta ==3:
@@ -111,6 +114,11 @@ def Menu():
             sleep(2)
 
         elif resposta ==4:
+            header ('Excluir Dados da Lista')
+            print ("EM DESENVOLVIMENTO")
+            sleep(2)
+
+        elif resposta ==5:
             header ('Executar Robô')
             sleep(2)
             OpenWhatsappDesktop()
@@ -119,7 +127,7 @@ def Menu():
             time.sleep(1)
             CloseWhatsappDesktop()
 
-        elif resposta == 5:
+        elif resposta == 6:
             header ('Saindo...')
             sleep(2)
             break
